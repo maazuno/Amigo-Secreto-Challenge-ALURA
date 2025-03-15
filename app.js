@@ -12,7 +12,11 @@ function adicionarAmigo() {
         amigos.push(nomeAmigo);
         inputAmigo.value = "";
     }
+    atualizarLista();
+}
 
+function atualizarLista() {
+    let listaAmigos = document.getElementById('listaAmigos')
 }
 
 
