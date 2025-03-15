@@ -1,5 +1,11 @@
 let amigos = [];
 
+document.getElementById("amigo").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        adicionarAmigo();
+    }
+});
+
 function adicionarAmigo() {
     let inputAmigo = document.getElementById("amigo");
     let nomeAmigo = inputAmigo.value.trim();
